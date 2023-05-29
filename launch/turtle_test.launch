@@ -1,0 +1,12 @@
+<launch>
+ <!-- Turtlesim Node-->
+
+<!-- Axes -->
+  <param name="axis_linear" value="1" type="int"/>
+  <param name="axis_angular" value="0" type="int"/>
+  <param name="scale_linear" value="2" type="double"/>
+  <param name="scale_angular" value="2" type="double"/>
+  <param name="LoadPath" value="/home/ru/model/save_human.txt" type="string"/>
+  <param name="SavePath" value="/home/ru/model/test_auto.txt" type="string"/>
+  <node pkg="learning_joy" type="turtle_teleop_joy" name="teleop" output="screen"/>
+</launch>
